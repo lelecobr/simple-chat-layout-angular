@@ -1,0 +1,37 @@
+#person-info {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    img {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid rgb(18, 202, 18);
+    }
+}
+
+#person-status .status {
+    color: #00B37E;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+
+    &.status:before {
+        content: '';
+        width: 0.8rem;
+        height: 0.8rem;
+        display: block;
+        background-color: #00B37E;
+        border-radius: 50%;
+    }
+}
+
+#top-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
