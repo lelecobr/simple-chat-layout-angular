@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './person.component.scss'
 })
 export class PersonComponent {
-
+  public status = 1;
 }

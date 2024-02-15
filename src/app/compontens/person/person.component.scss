@@ -8,11 +8,11 @@
         height: 48px;
         object-fit: cover;
         border-radius: 50%;
-        border: 2px solid rgb(18, 202, 18);
+        border: 2px solid white;
     }
 }
 
-#person-status .status {
+#person-status .status-online {
     color: #00B37E;
     display: flex;
     align-items: baseline;
@@ -20,12 +20,30 @@
     margin-top: 0.4rem;
     font-size: 1.2rem;
 
-    &.status:before {
+    &.status-online:before {
         content: '';
         width: 0.8rem;
         height: 0.8rem;
         display: block;
         background-color: #00B37E;
+        border-radius: 50%;
+    }
+}
+
+#person-status .status-offline {
+    color: rgb(173, 38, 38);
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+
+    &.status-offline:before {
+        content: '';
+        width: 0.8rem;
+        height: 0.8rem;
+        display: block;
+        background-color: rgb(173, 38, 38);
         border-radius: 50%;
     }
 }

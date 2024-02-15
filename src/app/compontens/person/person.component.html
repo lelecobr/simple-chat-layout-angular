@@ -4,8 +4,12 @@
             alt="A portrait of a woman">
         <div id="person-status">
             <strong>Beatriz Accioly</strong>
-            <div class="status">
+            <div [class.status-online]="status" [class.status-offline]="!status">
+                @if(status == 1){
                 Online
+                }@else{
+                Offline
+                }
             </div>
         </div>
     </div>
