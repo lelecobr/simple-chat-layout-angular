@@ -4,4 +4,6 @@
     width: 100vw;
     display: grid;
     grid-template-rows: max-content 1fr max-content;
+    max-width: 880px;
+    margin: auto;
 }
